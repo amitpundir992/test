@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 /*! 
 * @package IcoFont 
 * @version 1.0.1 
@@ -5,26 +6,23 @@
 * @copyright Copyright (c) 2015 - 2018 IcoFont 
 * @license - https://icofont.com/license/
 */
-/* In your CSS file */
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
-
 @font-face {
   font-family: IcoFont;
-  font-weight: 400; /* Regular weight */
-  font-style: normal; /* Correct value for font-style */
+  font-weight: 400;
+  font-style: Regular;
   src: url(../fonts/icofont.woff2) format("woff2"),
     url(fonts/icofont.woff) format("woff");
 }
 [class*=" icofont-"],
 [class^="icofont-"] {
   font-family: IcoFont !important;
-  /* speak: none; */
+  speak: none;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
   text-transform: none;
   white-space: nowrap;
-  overflow-wrap: normal;
+  word-wrap: normal;
   direction: ltr;
   line-height: 1;
   -webkit-font-feature-settings: "liga";

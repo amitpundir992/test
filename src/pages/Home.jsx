@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 //////////////// import CSS /////////////////////
-import "../css/animate.css";
+import "../css/animate.min.css";
 import "../css/datepicker.css";
+import "../css/bootstrap.min.css"
 import "../css/font-awesome.min.css";
 import "../css/icofont.css";
 import "../css/magnific-popup.css";
@@ -15,6 +16,7 @@ import "../css/style.css";
 //////////////  CSS end /////////////////////
 
 //import images
+import slider from "../img/slider.jpg"
 import slider2 from "../img/slider2.jpg";
 import slider3 from "../img/slider3.jpg";
 import sectionimg from "../img/section-img.png";
@@ -34,7 +36,6 @@ import contactimg from "../img/contact-img.png";
 
 /////////////// IMAGE IMPORT END //////////////////
 
- 
 export const Home = () => {
   const [email, setEmail] = useState("");
   const [placeholder, setPlaceholder] = useState("Your email address");
@@ -93,7 +94,7 @@ export const Home = () => {
           {/* Start Single Slider */}
           <div
             className="single-slider"
-            style={{ backgroundImage: "url('img/slider.jpg')" }}
+            style={{ backgroundImage: `url(${slider})` }}
           >
             <div className="container">
               <div className="row">
@@ -1122,46 +1123,6 @@ export const Home = () => {
       </section>
       {/* /End Newsletter Area   */}
 
-      {/* jquery Min JS   */}
-      <script src="../js/jquery.min.js"></script>
-      {/* jquery Migrate JS   */}
-      <script src="js/jquery-migrate-3.0.0.js"></script>
-      {/* jquery Ui JS   */}
-      <script src="js/jquery-ui.min.js"></script>
-      {/* Easing JS   */}
-      <script src="js/easing.js"></script>
-      {/* Color JS   */}
-      <script src="js/colors.js"></script>
-      {/* Popper JS   */}
-      <script src="js/popper.min.js"></script>
-      {/* Bootstrap Datepicker JS   */}
-      <script src="js/bootstrap-datepicker.js"></script>
-      {/* Jquery Nav JS   */}
-      <script src="js/jquery.nav.js"></script>
-      {/* Slicknav JS   */}
-      <script src="js/slicknav.min.js"></script>
-      {/* ScrollUp JS   */}
-      <script src="js/jquery.scrollUp.min.js"></script>
-      {/* Niceselect JS   */}
-      <script src="js/niceselect.js"></script>
-      {/* Tilt Jquery JS   */}
-      <script src="js/tilt.jquery.min.js"></script>
-      {/* Owl Carousel JS   */}
-      <script src="js/owl-carousel.js"></script>
-      {/* counterup JS   */}
-      <script src="js/jquery.counterup.min.js"></script>
-      {/* Steller JS   */}
-      <script src="js/steller.js"></script>
-      {/* Wow JS   */}
-      <script src="js/wow.min.js"></script>
-      {/* Magnific Popup JS   */}
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      {/* Counter Up CDN JS   */}
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-      {/* Bootstrap JS   */}
-      <script src="js/bootstrap.min.js"></script>
-      {/* Main JS   */}
-      <script src="js/main.js"></script>
     </>
   );
 };
